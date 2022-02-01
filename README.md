@@ -1,29 +1,43 @@
 # Kickstarter Solidity Contract
+
 Kickstarter clone on Ethereum blockchain that allows users to start a campaign through a campaign factory and to get contributers that will vote spending requests.
 
 ## Getting Started
+
 ### Dependencies
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
+-   npm
+    ```sh
+    npm install npm@latest -g
+    ```
 
 ### Installing
+
 1. Clone the repo
-   ```sh
-   git clone https://github.com/fbenfraj/kickstarter-contract
-   ```
+    ```sh
+    git clone https://github.com/fbenfraj/kickstarter-contract
+    ```
 2. Install NPM packages
-   ```sh
-   npm install
-   ```
+    ```sh
+    npm install
+    ```
+3. In deploy.js file, replace HDWalletProvider arguments with your own mnemonic phrase and Infura endpoint.
+    ```
+     const provider = new HDWalletProvider(
+         // your own mnemonic phrase,
+         // your own Infura endpoint
+     );
+    ```
 
 ### Executing program
 
-* How to run the program
-TODO: Compile and deploy scripts.
+-   Deploy the contract on the Rinkeby network
+    ```
+      node ethereum/deploy.js
+    ```
 
 ## Contributing
+
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
