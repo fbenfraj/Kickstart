@@ -14,8 +14,8 @@ fs.ensureDirSync(buildPath);
 
 // iterate over the keys of an object
 for (let contract in output) {
-  fs.outputJSONSync(
-    path.resolve(buildPath, contract.replace(":", "") + ".json"),
-    output[contract]
-  );
+    fs.outputJSONSync(
+        path.resolve(buildPath, contract.replace(":", "") + ".json"),
+        output[contract]
+    );
 }
